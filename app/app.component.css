@@ -1,0 +1,748 @@
+@font-face {
+    font-family: Suisse Intl;
+    src: url(../assets/Fonts/SuisseIntl-Regular.otf);
+}
+
+*{
+    align-content: center;
+    font-family: Suisse Intl, Arial;
+    font-size: 21px;
+}
+
+.pageHandler{
+    align-content: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    left: 29vw;
+    position: relative;
+}
+
+    #post{
+        font-size: 42px;
+    }
+
+    #pricing{
+        color:#C92570;
+        font-size: 38px;
+    }
+
+    #choose{
+        font-size: 28px;
+    }
+
+    .pageHandler .rowFlex {
+        display: flex;
+        flex-flow: row nowrap;
+        position: relative;
+        
+    }
+
+        #planButtonHandler{
+            margin: 0 0 56px 0;
+        }
+
+            .pageHandler .rowFlex .pricePlan{
+                background-color: white;
+                border-color: #CBCBCB;
+                border-radius: 10px;
+                border-style: solid;
+                font-size: 35px;
+                font-weight: bold;
+                height: 19vh;
+                margin: 0px 40px 0px 0px;
+                padding: 20px 70px 20px 70px;
+                width: 23.5vw;    
+            }
+
+                #donation{
+                    padding: 20px 70px 20px 65px;
+                }
+
+                .redHighlight{
+                    color: #FF0707
+                }
+
+                .pageHandler .rowFlex span{
+                    margin:0 9vw 4vh 0;
+                    
+                }
+
+                .pageHandler .rowFlex .inputBox{
+                    height: 8.5vh;
+                    padding: 0 0 0 10px;
+                    width: 27.5vw;
+                }
+
+                .pageHandler .rowFlex .time{
+                    height: 4.5vh;
+                   /* padding-left: 10px; */
+                    position: relative;
+                   /* left: 25px; */
+                }
+
+        #endDateTime{
+            margin: 0 0 3vh 0;
+        }        
+
+        #timeBox{
+            height: 8.5vh;
+            width: 27.5vw;
+        }
+
+        #terms{
+            left: 18vw;
+            position: relative;
+        }
+
+        .bottomButton{
+            padding: 0.5em 2em 0.5em 2em;   
+        }
+
+        #bottomButtonHandler{
+            margin-top: 2vh 0 0 0;
+        }
+
+        #backButton{
+            background-color: #FFFFFF;
+            border-color: #FFFFFF;
+            border-style: solid;
+            position: relative;
+
+        }
+
+        #previewButton{
+            background-color: #FFFFFF;
+            border-color: #FFFFFF;
+            border-style: solid;
+            left: 11vw;
+            position: relative;
+            
+        }
+
+        #cancelButton{
+            background-color: #E6E6E6;
+            border-color:#E6E6E6;
+            border-radius: 5px;
+            border-style: solid;
+            left: 11vw;
+            position: relative;
+            margin: 0 1vw;
+        }
+
+        #postButton{
+            background-color: #1E96ED;
+            border-color:#1E96ED;
+            border-radius: 5px;
+            border-style: solid;
+            color: white;
+            left: 11vw;
+            position:relative;
+            
+        }
+
+
+/*
+@media only screen and (min-width: 2560px){
+    #post{
+        font-size: 52px;
+        }
+    #pricing{
+        color:#C92570;
+        font-size: 48px;
+        }
+    #choose{
+        font-size: 38px;
+        }
+
+
+        .pageHandler .rowFlex .pricePlan{
+            width: 19.5vw;
+            height: 14vh;
+            font-size: 50px;
+        }
+        .pageHandler .rowFlex span{
+            font-size: 30px;
+        }
+        .pageHandler .rowFlex .inputBox{
+            height: 6.5vh;
+            width: 22.5vw; 
+            font-size: 30px;       
+        }
+
+        #timeBox{
+            height: 6.5vh;
+            width: 22.5vw;
+        }
+        #terms{
+            font-size: 30px;
+            left: 23vw;
+        }
+
+        #backButton{
+            font-size: 34px;
+            width: 12vw;
+            height: 9vh;
+            
+        }
+        #previewButton{
+            font-size: 34px;
+            left: 5vw;
+            width: 12vw;
+            height: 9vh;
+        }
+        #cancelButton{
+            font-size: 34px;
+            left: 5vw;
+            width: 12vw;
+            height: 9vh;
+        }
+        #postButton{
+            font-size: 34px;
+            left: 5vw;
+            width: 12vw;
+            height: 9vh;
+        }
+
+}
+
+@media only screen and (max-width: 2000px){
+    #terms{
+        left: 14.5vw;
+    }
+
+    #backButton{
+        font-size: 30px;
+        width: 12vw;
+        height: 9vh;
+        
+    }
+    #previewButton{
+        font-size: 30px;
+        left: 5vw;
+        width: 12vw;
+        height: 9vh;
+    }
+    #cancelButton{
+        font-size: 30px;
+        left: 5vw;
+        width: 12vw;
+        height: 9vh;
+    }
+    #postButton{
+        font-size: 30px;
+        left: 5vw;
+        width: 12vw;
+        height: 9vh;
+        padding-left: 47px;
+    }
+} */
+
+@media only screen and (max-width: 1280px){
+    
+    .pageHandler .rowFlex .pricePlan{
+        height: 16vh;
+        width: 25.5vw;
+    }
+
+    #donation{
+        padding: 20px 70px 20px 60px;
+    }
+
+    .pageHandler .rowFlex .time{
+        left: 0;
+        padding: 0;
+    }
+
+    #endDateTime{
+        margin: 0 0 2vh 0;
+    }
+
+    .pageHandler .rowFlex .inputBox{
+        height: 5.5vh;
+        width: 29vw;
+    }
+
+    #timeBox{
+        height: 5.5vh;
+        width: 29vw;
+    }
+
+    #terms{
+        left: 24vw; 
+    }
+
+    #bottomButtonHandler .bottomButton{
+        font-size: 20px !important;
+        margin: 5vh 0 0 0;
+    }
+
+    #previewButton{
+        left: 14vw;
+    }
+
+    #cancelButton{
+        left: 15vw;
+    }
+
+    #postButton{
+        left: 19vw;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 1024px){
+    *{
+        font-size: 20px;
+
+    }
+    .pageHandler .rowFlex .pricePlan{
+        height: 15vh;
+        width: 27.5vw;
+    }
+
+    #donation{
+        padding: 20px 70px 20px 58px;
+    }
+
+    #endDateTime{
+        margin: 0 0 2vh 0;
+    }
+
+    .pageHandler .rowFlex .inputBox{
+        height: 4.5;
+        width: 32vw;
+    }
+
+    #timeBox{
+        height: 4.5;
+        width: 32vw;
+    }
+
+    #terms{
+        left: 22vw;
+        margin: 2vh 0;
+        
+    }
+
+    #bottomButtonHandler{
+       /* margin-top: 5vh; */
+    }
+
+    #backButton{
+        left: -4vw;
+    }
+
+    #previewButton{
+        left: 9vw;
+    }
+
+    #cancelButton{
+        left: 10vw;
+
+    }
+
+    #postButton{
+        left: 14vw;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    *{
+        font-size: 16px;
+    }    
+
+    #post{
+        font-size: 38px;
+    }
+
+    #pricing{
+        font-size: 34px;
+    }
+
+    #choose{
+        font-size: 24px;
+    }
+
+    .pageHandler{
+        left: 6vw;
+    }
+    
+    .pageHandler .rowFlex .pricePlan{
+        font-size: 25px;
+        height: 10vh;
+        width: 31.5vw;
+    }
+
+    #donation{
+        padding: 20px 70px 20px 55px;
+        width: 28.5vw;
+    }
+    
+    .pageHandler .rowFlex .inputBox{
+        height: 3.5vh;
+        width: 33.5vw;
+    }
+
+    #timeBox{
+        height: 3.5vh;
+        width: 33.5vw;
+    }
+   
+    #endDateTime{
+        margin: 0 0 1vh 0;
+    }
+
+    
+    #terms{
+        left: 21.25vw;
+    } 
+
+
+    #bottomButtonHandler{
+        margin: 2vh 0 0 0;
+    }
+    
+    #bottomButtonHandler  .bottomButton{
+        font-size: 15px !important;
+        height: 4vh;
+        margin-top: 2vh 0 0 0;
+        padding: 0;
+        width: 18vw;
+    }
+    
+    #backButton{
+        left: -5vw;
+    }
+
+    #previewButton{
+        left: 3vw; 
+    }
+
+    #cancelButton{
+        left: 3vw;
+    }
+
+    #postButton{
+        left: 6vw;
+    } 
+
+}
+
+/* 
+@media only screen and (min-width: 600px){
+    *{
+        font-size: 18px;
+    }
+    .pageHandler{
+        
+        }
+        .pageHandler .rowFlex{
+        
+            }
+            #post{
+                font-size: 36px;
+                }
+            #pricing{
+                font-size: 32px;
+                }
+            #choose{
+                font-size: 28px;
+            }
+            #planButtonHandler .pricePlan{
+                
+               
+                width: 26.5vw;
+                height: 11vh;
+                font-size: 20px;
+                position: relative;
+                
+                }
+                #paid{
+                    padding: 20px 70px 20px 65px;
+                }
+                #free{
+                    padding: 20px 70px 20px 65px;
+                }
+                #donation{
+                    padding: 20px 70px 20px 45px;
+                }
+                .pageHandler .inputHandler{
+                    position: relative;
+                    
+                }
+                .pageHandler .inputHandler .inputBox{
+                    width: 35vw;
+                    height: 27px;
+                }
+
+                #endDateTime{
+                    margin-bottom: 1vh;
+                }
+                
+                #timeBox {
+                    width: 35vw !important;
+                }
+                
+                
+                #terms{
+                    left: 8vw;
+                    
+                    }
+                #bottomButtonHandler{
+                    position: relative;
+                    
+                }
+
+                #bottomButtonHandler .bottomButton{
+                    margin-top: 1vh;
+                    margin-bottom: 2vh;
+                    }
+                    #backButton{
+                        left: -5vw;
+                    }
+                    #previewButton{
+                        left: -2vw;
+                    }
+                    #cancelButton{
+                        left: -3vw;
+                    }
+                    #postButton{
+                        left: -2vw;
+                    }
+
+                    #previewButton{
+                        
+                    }
+                    #cancelButton{
+                        border-style: solid;
+                        border-color: #E6E6E6;
+                        background-color: #E6E6E6;
+                        
+                    }
+} */
+
+@media only screen and (max-width: 420px){
+    *{
+        font-size: 14px;
+    }
+
+    .pageHandler{
+        left: 0;
+        margin: 0 15vw;
+    }
+        
+        .pageHandler .rowFlex{
+            display: flex;
+            flex-flow: column nowrap;
+        }
+            
+        #post{
+            font-size: 30px;
+        }
+            
+            #pricing{
+                font-size: 26px;
+            }
+
+            #choose{
+                font-size: 16px;
+            }
+            
+            #planButtonHandler .pricePlan{
+                font-size: 20px; 
+                height: 11vh;
+                left: 6vw;
+                margin: 10px 0px 10px 0px;
+                position: relative;
+                width: 44.5vw;
+            }
+
+                #paid{
+                    padding: 20px 70px 20px 70px;
+                }
+
+                #free{
+                    padding: 20px 70px 20px 70px;
+                }
+
+                #donation{
+                    padding: 20px 70px 20px 52px;
+                }
+
+                .pageHandler .inputHandler{
+                    left: 3vw;
+                    font: 14px !important;
+                    position: relative;
+                }
+
+                .pageHandler .inputHandler .inputBox{
+                    height: 3.5vh;
+                    width: 51vw;
+                }
+                
+                #timeBox {
+                    height: 3.5vh;
+                    width: 51vw !important;
+                }
+                
+                #terms{
+                    font-size: 14px;
+                    left: 0px;
+                    top: 1vh;
+                }
+
+                #bottomButtonHandler{
+                    position: relative;
+                    right: 11vw;
+                }
+
+                #bottomButtonHandler .bottomButton{
+                    font-size: 20px;
+                    height: 7vh;
+                    margin: 2vh 0;
+                    left: 9vw;
+                    width: 65vw;
+                }
+
+                    #backButton{
+                        background-color: #E6E6E6; 
+                        border-color: #E6E6E6;
+                        border-radius: 5px;
+                        border-style: solid;
+                    }
+
+                    #previewButton{
+                        background-color: #E6E6E6;
+                        border-color: #E6E6E6;
+                        border-radius: 5px;
+                        border-style: solid;
+                    }
+
+                    #cancelButton{
+                        background-color: #E6E6E6;
+                        border-color: #E6E6E6;
+                        border-radius: 5px;
+                        border-style: solid;                       
+                        margin: 0;        
+                    }
+
+                    #postButton{
+                        
+                    }
+    
+}
+
+@media only screen and (max-width: 400px){
+    *{
+        font-size: 14px;
+    }
+    .pageHandler{
+        left: 0px;
+        margin: 0 15vw;
+    }
+
+        .pageHandler .rowFlex{
+            display: flex;
+            flex-flow: column nowrap;
+        }
+            
+            #post{
+                font-size: 30px;
+            }
+            
+            #pricing{
+                font-size: 26px;
+            }
+            
+            #choose{
+                font-size: 16px;
+            }
+
+            #planButtonHandler .pricePlan{
+                font-size: 20px;  
+                height: 11vh;
+                left: 6vw;
+                margin: 10px 0px 10px 0px;
+                position: relative;
+                width: 50.5vw;
+            }
+
+                #paid{
+                    padding: 20px 70px 20px 70px;
+                }
+
+                #free{
+                    padding: 20px 70px 20px 70px;
+                }
+
+                #donation{
+                    padding: 20px 70px 20px 52px;
+                }
+
+                .pageHandler .inputHandler{
+                    font: 14px !important;
+                    left: 3vw;
+                    position: relative;
+                }
+
+                .pageHandler .inputHandler .inputBox{
+                    height: 3.5vh;
+                    width: 51vw;
+                }
+                
+                #timeBox {
+                    height: 3.5vh;
+                    width: 51vw !important;
+                }
+                
+                #terms{
+                    font-size: 14px;
+                    left: 0px;
+                    top: 1vh;
+                }
+
+                #bottomButtonHandler{
+                    right: 11vw;
+                    position: relative;
+                }
+
+                #bottomButtonHandler .bottomButton{
+                    font-size: 20px;
+                    height: 7vh;
+                    left: 9vw;
+                    margin: 2vh 0;
+                    width: 65vw;
+                }
+                
+                    #backButton{
+                        background-color: #E6E6E6;
+                        border-color: #E6E6E6;
+                        border-radius: 5px;
+                        border-style: solid;
+                    }
+
+                    #previewButton{
+                        background-color: #E6E6E6;
+                        border-color: #E6E6E6;
+                        border-radius: 5px;
+                        border-style: solid;  
+                    }
+
+                    #cancelButton{
+                        background-color: #E6E6E6;
+                        border-color: #E6E6E6;
+                        border-radius: 5px;
+                        border-style: solid;
+                        margin: 0;
+                    }
+                    
+                    #postButton{
+                        
+                    }
+    
+}

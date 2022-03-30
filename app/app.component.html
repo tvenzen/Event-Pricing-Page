@@ -1,0 +1,72 @@
+<div class="pageHandler">
+  <h1 id="post"> Post Event </h1>
+  <h2 id="pricing"> Pricing for event </h2>
+  <h3 id="choose"> Choose a price plan: </h3>
+    <div class="rowFlex" id="planButtonHandler">
+      <button class="pricePlan" id="paid" (click)="colorChange('paid')"> Paid </button>
+      <button class="pricePlan" id="free" (click)="colorChange('free')"> Free </button>
+      <button class="pricePlan" id="donation" (click)="colorChange('donation')"> Donation </button>
+    </div>
+
+  <form action="">
+    <div class="inputHandler">
+
+      <div class="rowFlex" id="numberAndPriceHandler">
+        <span> Number of Tickets<span class="redHighlight">*</span>
+          <br>
+          <input class="inputBox" type="text" placeholder="100" required>
+        </span>
+
+        <span> Price of event per ticket<span class="redHighlight">*</span>
+          <br>
+          <input class="inputBox" id="ticketPrice" type="text" placeholder="$5.00" required>
+        </span>
+      </div>
+
+      <div class="rowFlex" id="eventCategoryHandler">
+        <span> Event Category<span class="redHighlight">*</span>
+          <br>
+          <input class="inputBox" type="text" id="eventCategory" required>
+        </span>
+      </div>
+
+      <div class="rowFlex" id="startDateTime">
+        <span> Start Date of event<span class="redHighlight">*</span>
+          <br>
+          <input class="inputBox" type="text" placeholder="mm/dd/yyyy" pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}" required>
+        </span>
+      
+        <span> Time of event<span class="redHighlight">*</span>
+          <br>
+          <input class="inputBox" id="timeBox" type="time" required>
+        </span>
+      </div>
+
+      <div class="rowFlex" id="endDateTime">
+        <span> Date sales end<span class="redHighlight">*</span>
+          <br>
+          <input class="inputBox" type="text"  placeholder="mm/dd/yyyy" pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}" required>
+        </span>
+      
+        <span class="time"> Time sales end<span class="redHighlight">*</span>
+          <br>
+          <input class="inputBox" id="timeBox" type="time" required>
+        </span>
+      </div>
+    </div>
+
+    
+
+    <span id="terms"> 
+      <input type="checkbox" required>
+      I agree to the terms and services of Pantsuit Professionals
+    </span>
+
+    <div class="rowFlex" id="bottomButtonHandler">
+      <button class="bottomButton" id="backButton"> Back </button>
+      <button class="bottomButton" id="previewButton"> Preview </button>
+      <button class="bottomButton" id="cancelButton"> Cancel </button>
+      <input type="submit" class="bottomButton" id="postButton" value="Post Event">
+    </div>
+  </form>
+</div>
